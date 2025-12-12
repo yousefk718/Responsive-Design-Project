@@ -173,6 +173,7 @@
     .topnav__link {
       font-size: var(--font-size-topnav);
       font-weight: 700;
+      line-height: 1;
       letter-spacing: 0.05em;
       text-transform: uppercase;
       color: var(--color-text-light);
