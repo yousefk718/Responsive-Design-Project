@@ -150,6 +150,11 @@
   .wrapper {
     width: min(calc(100% - 48px), calc(1200 / 16 * 1rem));
     margin-inline: auto;
+    padding-block: 60px;
+    
+    @media (width >= calc(600 / 16 * 1rem)) {
+      padding-block: 80px;
+    }
   }
 }
 
@@ -301,6 +306,45 @@
     .hero__buttons {
       display: flex;
       gap: 20px;
+    }
+  }
+
+  /* Features */
+  .features {
+    .features__wrapper {
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+
+      @media (width >= calc(1000 / 16 * 1rem)) {
+        flex-direction: row;
+        gap: 80px;
+      }
+    }
+    
+    .features__item {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      align-items: center;
+      text-align: center;
+
+
+      @media (width >= calc(1000 / 16 * 1rem)) {
+        align-items: flex-start;
+        text-align: left;
+      }
+    }
+
+    .features__icon {
+    }
+
+    .features__title {
+      line-height: 1;
+    }
+
+    .features__description {
+      max-width: 40ch;
     }
   }
 }
