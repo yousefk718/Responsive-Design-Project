@@ -146,7 +146,7 @@
     width: min(calc(100% - 48px), calc(1200 / 16 * 1rem));
     margin-inline: auto;
     padding-block: 60px;
-    
+
     @media (width >= calc(600 / 16 * 1rem)) {
       padding-block: 80px;
     }
@@ -316,14 +316,13 @@
         gap: 80px;
       }
     }
-    
+
     .features__item {
       display: flex;
       flex-direction: column;
       gap: 10px;
       align-items: center;
       text-align: center;
-
 
       @media (width >= calc(1000 / 16 * 1rem)) {
         align-items: flex-start;
@@ -357,7 +356,7 @@
     .fw-feature__title {
       margin-block-end: 20px;
     }
-    
+
     .fw-feature__description {
       margin-block-end: 20px;
       max-width: 70ch;
@@ -365,9 +364,70 @@
 
     .fw-feature__image {
       width: calc(325 / 16 * 1rem);
-      
+
       @media (width >= calc(600 / 16 * 1rem)) {
         width: calc(792 / 16 * 1rem);
+      }
+    }
+  }
+
+  /* Testimonial */
+  .testimonial {
+    color: var(--color-text-dark);
+    .testimonial__wrapper {
+      display: grid;
+      justify-content: center;
+    }
+
+    .testimonial__icon {
+      margin-block-end: 20px;
+      width: calc(52 / 16 * 1rem);
+
+      @media (width >= calc(600 / 16 * 1rem)) {
+        margin-block-end: 30px;
+        width: calc(78 / 16 * 1rem);
+      }
+    }
+
+    .testimonial__author-quote {
+    }
+
+    .testimonial__blockquote {
+      margin-block-end: 30px;
+
+      @media (width >= calc(600 / 16 * 1rem)) {
+        margin-block-end: 40px;
+      }
+    }
+
+    .testimonial__quote-text {
+      font-size: var(--font-size-testmonial);
+      font-weight: 700;
+      max-width: 42ch;
+    }
+
+    .testimonial__author-wrapper {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+
+      @media (width >= calc(600 / 16 * 1rem)) {
+        flex-direction: row;
+        gap: 30px;
+      }
+    }
+
+    .testimonial__author-image {
+      width: calc(120 / 16 * 1rem);
+      border-radius: 50%;
+    }
+
+    .testimonial__author-description {
+      text-align: center;
+
+      @media (width >= calc(600 / 16 * 1rem)) {
+        text-align: left;
       }
     }
   }
